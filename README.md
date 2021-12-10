@@ -1,1 +1,2 @@
-# CE
+# Contador basico
+Apenas um contador
