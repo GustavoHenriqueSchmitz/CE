@@ -1,64 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Contador</title>
-        <style>
-            * {
-                margin: 0;
-                box-sizing: border-box;
-            }
-
-            body {
-                min-height: 100vh;
-                background-color: black;
-                color: white;
-                display: grid;
-                place-items: center;
-            }
-
-            section {
-                background: rgba(255,255,255, .4);
-                padding: 20px;
-                border-radius: 10%;
-                text-align: center;
-            }
-
-            p {
-                font-size: 100px;
-            }
-        </style>
-    </head>
-    <body>
-        <section>
-          <h1>Contador</h1>
-          <p id="resultado"></p>
-          <button onclick="diminuir()">menos</button>
-          <button onclick="aumentar()">mais</button>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div id="basedosite">
+        <section id="contador">
+            <p id="contagem"></p>
         </section>
-        <script>
-            
-            // estado da minha aplicação
-            let numero = 0
-            
-            // alteradores de estados da aplicação
-            function diminuir() {
-                numero = numero - 1
-                render()
-            }
-
-            function aumentar() {
-                numero = numero + 1
-                render()
-            }
-
-            // jogar o estado da aplicação na tela
-            function render() {
-                const p = document.querySelector("#resultado")
-                p.innerText = numero
-            }
-
-            // iniciar
-            render()
-        </script>
-    </body>
+        <section id="botoes">
+            <button id="bu1" onclick="somar()"><p class="pb">Somar</p></button>
+            <button id="bu2" onclick="subtrair()"><p class="pb">Subtrair</p></button>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
