@@ -1,3 +1,3 @@
 # Contador basico
-Apenas um contador
+Apenas um contador |
 Link para acesso -> https://contadorbasico.netlify.app
